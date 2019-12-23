@@ -19,7 +19,7 @@ hackDB.service( "hackDB_service", function( $http, $timeout ){
     hackDB_service.init = function(){
         hackDB_service.data.busy = true;
         $timeout( function(){
-            $http.get( "/data/books.json" ).then( function( res ){
+            $http.get( "data/books.json" ).then( function( res ){
                 hackDB_service.data.busy = false;
                 hackDB_service.data.books = res.data;
             } );
