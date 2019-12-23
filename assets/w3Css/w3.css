@@ -1,29 +1,29 @@
 @font-face{
-	src : url('/assets/Fonts/roman/roman.otf');
+	src : url('/allitebooks/assets/Fonts/roman/roman.otf');
 	font-family: "dn_roman";
 }
 @font-face{
-	src : url('/assets/Fonts/tt/ttr.ttf');
+	src : url('/allitebooks/assets/Fonts/tt/ttr.ttf');
 	font-family: "ttr";
 }
 @font-face{
-	src : url('/assets/Fonts/tt/tti.ttf');
+	src : url('/allitebooks/assets/Fonts/tt/tti.ttf');
 	font-family: "tti";
 }
 @font-face{
-	src : url('/assets/Fonts/tt/ttb.ttf');
+	src : url('/allitebooks/assets/Fonts/tt/ttb.ttf');
 	font-family: "ttb";
 }
 @font-face{
-	src : url('/assets/Fonts/robotoc/robotoc_r.ttf');
+	src : url('/allitebooks/assets/Fonts/robotoc/robotoc_r.ttf');
 	font-family: "robotoc_r";
 }
 @font-face{
-	src : url('/assets/Fonts/robotoc/robotoc_l.ttf');
+	src : url('/allitebooks/assets/Fonts/robotoc/robotoc_l.ttf');
 	font-family: "robotoc_l";
 }
 @font-face{
-	src : url('/assets/Fonts/robotoc/robotoc_b.ttf');
+	src : url('/allitebooks/assets/Fonts/robotoc/robotoc_b.ttf');
 	font-family: "robotoc_b";
 }
 .w3-font-robotoc_r{font-family : 'robotoc_r' !important;}
