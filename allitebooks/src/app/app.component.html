@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>All IT ebooks</title>
+  </head>
+  <body>
+    <div class="w3-row">
+      <div class="w3-col l3 m3">
+        <br>
+      </div>
+      <div class="w3-col l6 m6">
+        <h1 class="w3-text-teal">
+          Hack DB
+        </h1>
+        <p class="w3-text-gray">
+          A complete awesome list of <b>7555</b> IT ebooks
+        </p>
+        <p>
+          Download 7555 Books Database as:
+        </p>
+        <a href="assets/books.json" download="Books.json" class="w3-border" mat-button>
+        JSON
+        </a>
+        <a href="assets/books.sql" download="Books.sql" class="w3-border w3-margin-left" mat-button>
+        SQL
+        </a>
+        <mat-form-field appearance="outline" class="w3-block w3-margin-top">
+          <mat-label>Search Your Book</mat-label>
+          <input matInput placeholder="Enter Book Title" [(ngModel)]="search.book_title">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <br>
+        <div class="w3-padding w3-round w-responsive" style='max-height:600px !important;overflow: auto;'>
+          <div class="w3-row w3-margin-top" *ngFor="let book of books | bookFilter : search.book_title;">
+            <div class="w3-col l4 m4 s4">
+                  <img src="{{book.book_image_url}}" alt="" width="100px" height="140px" class="w3-right">
+            </div>
+            <div class="w3-col l8 m8">
+              <div class="w3-padding">
+                  <span class="w3-large w3-block">{{book.book_title}}</span>
+                  <span class="w3-small w3-text-gray w3-block"> {{book.book_pages}} Pages | {{book.book_size}} </span> 
+                  <span class="w3-small w3-text-gray w3-block"> ISBN : {{book.book_isbn_10}} | Format : {{book.book_file_format}} </span> 
+                  <a href="{{book.book_download_url}}" target="_blank" mat-button color="primary" class="w3-round-small" >
+                    Download
+                  </a>
+                  <a href="{{book.book_view_url}}" target="_blank" mat-button color="primary" class="w3-round-small" >
+                    Read Online
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
