@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # All IT ebooks
 This repo contains complete list of ebooks available in allitebooks.org website.
 
